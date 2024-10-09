@@ -5,3 +5,7 @@ from django.views import View
 class IndexView(View):
   def get(self, request):
     return render(request, 'index.html')
+  
+class ApiTesteView(View):
+  def get(self, request):
+    return render(request, 'apiTeste.html')
